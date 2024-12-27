@@ -24,57 +24,60 @@ You can install them via pip:
 
 ```bash
 pip install tweepy textblob networkx matplotlib
+```
 
 ## Setup
--Clone this repository:
-'''bash
+- 1) Clone this repository:
+```bash
 git clone https://github.com/your-username/twitter-sentiment-analysis.git
 cd twitter-sentiment-analysis
-Obtain Twitter API keys:
+```
+
+- 2) Obtain Twitter API keys:
 Create a Twitter Developer account and generate your API keys and tokens. Add them to the script:
 
-python
-Copy code
+```bash
 API_KEY = "your-api-key"
 API_SECRET = "your-api-secret"
 ACCESS_TOKEN = "your-access-token"
 ACCESS_TOKEN_SECRET = "your-access-token-secret"
 BEARER_TOKEN = "your-bearer-token"
-Run the script:
-bash
-Copy code
+```
+- 3) Run the script:
+```bash
 python twitter_sentiment_analysis.py
-How It Works
+```
+## How It Works
 Authenticate with the Twitter API
 The script uses your credentials to access the Twitter API and fetch recent tweets related to the provided query.
 
-Fetch Tweets
+### Fetch Tweets
 Specify your query (e.g., "crypto OR #cryptocurrency OR blockchain") to collect recent tweets mentioning these terms.
 
-Sentiment Analysis
+### Sentiment Analysis
 Uses TextBlob to calculate a sentiment polarity score for each tweet.
 Sentiments are categorized as:
 Positive: Polarity > 0
 Neutral: Polarity = 0
 Negative: Polarity < 0
-Graph Construction
+
+### Graph Construction
 Builds a graph using NetworkX where nodes represent users and edges represent mentions.
 Edge weights reflect the sentiment polarity of the interaction.
-Visualization
+
+### Visualization
 Visualizes the graph using Matplotlib, with edge colors indicating sentiment weights.
-Output
+
+### Output
 Displays the overall sentiment score and type (positive, neutral, or negative) of the community.
 Example Output
-Console Output:
-plaintext
-Copy code
+```bash
 Logged in as: YourTwitterHandle
 
 Overall Sentiment Analysis:
   Sentiment Score: 0.35
   Sentiment Type: Positive
-Graph:
-A visualization of the user interactions with sentiment-weighted edges.
+```
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+### Graph:
+A visualization of the user interactions with sentiment-weighted edges.
