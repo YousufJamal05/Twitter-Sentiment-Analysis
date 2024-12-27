@@ -27,13 +27,13 @@ pip install tweepy textblob networkx matplotlib
 ```
 
 ## Setup
-- 1) Clone this repository:
+-  Clone this repository:
 ```bash
 git clone https://github.com/your-username/twitter-sentiment-analysis.git
 cd twitter-sentiment-analysis
 ```
 
-- 2) Obtain Twitter API keys:
+-  Obtain Twitter API keys:
 Create a Twitter Developer account and generate your API keys and tokens. Add them to the script:
 
 ```bash
@@ -43,7 +43,7 @@ ACCESS_TOKEN = "your-access-token"
 ACCESS_TOKEN_SECRET = "your-access-token-secret"
 BEARER_TOKEN = "your-bearer-token"
 ```
-- 3) Run the script:
+-  Run the script:
 ```bash
 python twitter_sentiment_analysis.py
 ```
