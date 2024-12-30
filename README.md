@@ -29,7 +29,7 @@ pip install tweepy textblob networkx matplotlib
 ## Setup
 -  Clone this repository:
 ```bash
-git clone https://github.com/your-username/twitter-sentiment-analysis.git
+git clone https://github.com/YousufJamal05/twitter-sentiment-analysis.git
 cd twitter-sentiment-analysis
 ```
 
